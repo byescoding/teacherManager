@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcafa3d8-cbf2-469a-9aa6-2d9b8778fce2" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\MavenRepository" />
+        <option name="mavenHome" value="E:/maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jUincHZwsZBDjJyhX0H32kzif1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bai/teachermanager/config" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bai.teachermanager.utils" />
+      <recent name="com.bai.teachermanager" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java学习\SpringBoot\综合实训\teachermanager\src\main\java\com\bai\teachermanager\config" />
+      <recent name="E:\Java学习\SpringBoot\综合实训\teachermanager\src\main\java\com\bai\teachermanager\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TeachermanagerApplication">
+    <configuration name="CodeGenator.genCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teachermanager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bai.teachermanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bai.teachermanager" />
+      <option name="MAIN_CLASS_NAME" value="com.bai.teachermanager.CodeGenator" />
+      <option name="METHOD_NAME" value="genCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeachermanagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="teachermanager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bai.teachermanager.TeachermanagerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55308" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CodeGenator.genCode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcafa3d8-cbf2-469a-9aa6-2d9b8778fce2" name="默认更改列表" comment="" />
+      <created>1603865238555</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603865238555</updated>
+      <workItem from="1603865242418" duration="3482000" />
+      <workItem from="1603960797514" duration="1191000" />
+      <workItem from="1604039202140" duration="300000" />
+      <workItem from="1605527063709" duration="4126000" />
+      <workItem from="1605874991771" duration="12735000" />
+      <workItem from="1605922054402" duration="20078000" />
+      <workItem from="1606443865370" duration="840000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="830" y="260" key="#com.intellij.ide.util.MemberChooser" timestamp="1605938001713">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="830" y="260" key="#com.intellij.ide.util.MemberChooser/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605938001713" />
+    <state x="617" y="215" key="#自动导入" timestamp="1605881017197">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="215" key="#自动导入/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605881017197" />
+    <state width="2005" height="449" key="GridCell.Tab.0.bottom" timestamp="1605982924613">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.0.bottom/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924613" />
+    <state width="2005" height="449" key="GridCell.Tab.0.center" timestamp="1605982924612">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.0.center/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924612" />
+    <state width="2005" height="449" key="GridCell.Tab.0.left" timestamp="1605982924612">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.0.left/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924612" />
+    <state width="2005" height="449" key="GridCell.Tab.0.right" timestamp="1605982924612">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.0.right/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924612" />
+    <state width="2005" height="449" key="GridCell.Tab.1.bottom" timestamp="1605982924614">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.1.bottom/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924614" />
+    <state width="2005" height="449" key="GridCell.Tab.1.center" timestamp="1605982924613">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.1.center/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924613" />
+    <state width="2005" height="449" key="GridCell.Tab.1.left" timestamp="1605982924613">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.1.left/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924613" />
+    <state width="2005" height="449" key="GridCell.Tab.1.right" timestamp="1605982924613">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="449" key="GridCell.Tab.1.right/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605982924613" />
+    <state x="417" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1604039485195">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="417" y="219" key="com.intellij.ide.util.TipDialog/0.0.1475.789@0.0.1475.789" timestamp="1604039485195" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1605943958192">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/2560.-266.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1605943958192" />
+  </component>
+</project>
