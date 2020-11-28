@@ -1,6 +1,6 @@
 package com.bai.teachermanager.service;
 
-import com.bai.teachermanager.entity.Class;
+import com.bai.teachermanager.entity.Classes;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author escoding
  * @since 2020-11-20
  */
-public interface ClassService extends IService<Class> {
+public interface ClassService extends IService<Classes> {
 
 }

@@ -1,8 +1,7 @@
 package com.bai.teachermanager.controller;
 
 
-import com.bai.teachermanager.entity.Admin;
-import com.bai.teachermanager.entity.Class;
+import com.bai.teachermanager.entity.Classes;
 import com.bai.teachermanager.mapper.ClassMapper;
 import com.bai.teachermanager.service.impl.ClassServiceImpl;
 import com.bai.teachermanager.utils.R;
@@ -36,23 +35,23 @@ public class ClassController {
     @ApiOperation("获取班级信息")
     @GetMapping("/getclasses")
     public R getAdminList(){
-        List<Class> list = classService.list();
+        List<Classes> list = classService.list();
         return R.ok().data("admins",list);
     }
     @ApiOperation("班级列表分页")
     @GetMapping("/list/{page}/{limit}")
     public R pageList(@ApiParam( value = "页码" ,required = true) @PathVariable("page") long page,
                       @ApiParam(value = "页面数据量" ,required = true) @PathVariable("limit") long limit){
-        Page<Class> pageParm = new Page<>(page,limit);
-        Page<Class> classPage = classMapper.selectPage(pageParm, null);
+        Page<Classes> pageParm = new Page<>(page,limit);
+        Page<Classes> classPage = classMapper.selectPage(pageParm, null);
         long total = classPage.getTotal(); //获取总数
-        List<Class> records = classPage.getRecords();  //获取记录行数
+        List<Classes> records = classPage.getRecords();  //获取记录行数
         return R.ok().data("total",total).data("records",records);
     }
 
     @ApiOperation("添加班级信息")
     @PostMapping("/save")
-    public R saveAdmin(@ApiParam(value = "班级信息",required = true) @RequestBody Class classes){
+    public R saveAdmin(@ApiParam(value = "班级信息",required = true) @RequestBody Classes classes){
         boolean isSave = classService.save(classes);
         if (isSave){
             return   R.ok().message(" 保存成功");
@@ -63,8 +62,8 @@ public class ClassController {
 
 
     @ApiOperation("修改班级信息")
-    @PostMapping("/update/{id}")
-    public R  updateAdminById(@ApiParam(value = "教师信息",required = true) @RequestBody Class classes){
+    @PutMapping("/update")
+    public R  updateAdminById(@ApiParam(value = "教师信息",required = true) @RequestBody Classes classes){
         boolean isUpdate = classService.updateById(classes);
         if (isUpdate){
             return    R.ok().message("更新成功");
@@ -74,7 +73,7 @@ public class ClassController {
     }
 
     @ApiOperation("删除班级信息")
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/remove/{id}")
     public R delAdminById(@ApiParam(value = "管理员id",required = true) @PathVariable String id){
         boolean isDelete = classService.removeById(id);
         if (isDelete){
@@ -88,12 +87,27 @@ public class ClassController {
     @ApiOperation("根据id去获取班级信息")
     @GetMapping("get/{id}")
     public R getAdminById(@ApiParam(value = "班级id",required = true) @PathVariable String id){
-        Class classes = classService.getById(id);
+        Classes classes = classService.getById(id);
         if (classes == null){
             return R.error().message("不存在该班级");
         }else{
-            return  R.ok().data("class",classes);
+            return  R.ok().data("item",classes);
         }
     }
+
+
+    //批量删除
+    @ApiOperation("批量删除班级信息")
+    @PostMapping("/batch-remove")
+    public R batchRemove(@ApiParam(value = "班级ID集合",required = true) @RequestBody List<String> ids){
+        System.out.println(ids);
+        boolean res = classService.removeByIds(ids);
+        if (res){
+            return R.ok().message("数据删除成功");
+        }else {
+            return R.error().message("数据不存在");
+        }
+    }
+
 }
 

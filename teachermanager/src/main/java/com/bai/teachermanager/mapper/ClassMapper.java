@@ -1,6 +1,6 @@
 package com.bai.teachermanager.mapper;
 
-import com.bai.teachermanager.entity.Class;
+import com.bai.teachermanager.entity.Classes;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author escoding
  * @since 2020-11-20
  */
-public interface ClassMapper extends BaseMapper<Class> {
+public interface ClassMapper extends BaseMapper<Classes> {
 
 }

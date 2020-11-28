@@ -1,15 +1,11 @@
 package com.bai.teachermanager.controller;
 
 
-import com.bai.teachermanager.entity.Class;
 import com.bai.teachermanager.entity.Course;
-import com.bai.teachermanager.entity.CourseType;
 import com.bai.teachermanager.mapper.CourseMapper;
 import com.bai.teachermanager.service.impl.CourseServiceImpl;
-import com.bai.teachermanager.service.impl.CourseTypeServiceImpl;
 import com.bai.teachermanager.utils.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,7 +72,7 @@ public class CourseController {
     }
 
     @ApiOperation("删除课程信息")
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/remove/{id}")
     public R delAdminById(@ApiParam(value = "课程id",required = true) @PathVariable String id){
         boolean isDelete = courseService.removeById(id);
         if (isDelete){
@@ -94,8 +90,23 @@ public class CourseController {
         if (course == null){
             return R.error().message("不存在该课程信息");
         }else{
-            return  R.ok().data("course",course);
+            return  R.ok().data("item",course);
         }
     }
+
+
+    //批量删除
+    @ApiOperation("批量课程信息")
+    @PostMapping("/batch-remove")
+    public R batchRemove(@ApiParam(value = "课程ID集合",required = true) @RequestBody List<String> ids){
+        System.out.println(ids);
+        boolean res = courseService.removeByIds(ids);
+        if (res){
+            return R.ok().message("数据删除成功");
+        }else {
+            return R.error().message("数据不存在");
+        }
+    }
+
 }
 

@@ -1,11 +1,8 @@
 package com.bai.teachermanager.controller;
 
 
-import com.bai.teachermanager.entity.Class;
 import com.bai.teachermanager.entity.Teacher;
-import com.bai.teachermanager.mapper.ClassMapper;
 import com.bai.teachermanager.mapper.TeacherMapper;
-import com.bai.teachermanager.service.impl.ClassServiceImpl;
 import com.bai.teachermanager.service.impl.TeacherServiceImpl;
 import com.bai.teachermanager.utils.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -92,7 +89,7 @@ public class TeacherController {
         if (teacher == null){
             return R.error().message("不存在该班级");
         }else {
-            return  R.ok().data("teacher",teacher);
+            return  R.ok().data("item",teacher);
         }
     }
 

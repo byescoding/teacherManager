@@ -1,6 +1,6 @@
 package com.bai.teachermanager.service.impl;
 
-import com.bai.teachermanager.entity.Class;
+import com.bai.teachermanager.entity.Classes;
 import com.bai.teachermanager.mapper.ClassMapper;
 import com.bai.teachermanager.service.ClassService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2020-11-20
  */
 @Service
-public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements ClassService {
+public class ClassServiceImpl extends ServiceImpl<ClassMapper, Classes> implements ClassService {
 
 }

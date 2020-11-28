@@ -22,7 +22,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @ApiModel(value="Class对象", description="班级表")
-public class Class extends BaseEntity {
+public class Classes extends BaseEntity {
 
     private static final long serialVersionUID=1L;
 
