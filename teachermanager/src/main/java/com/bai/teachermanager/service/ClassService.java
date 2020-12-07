@@ -3,6 +3,8 @@ package com.bai.teachermanager.service;
 import com.bai.teachermanager.entity.Classes;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.io.InputStream;
+
 /**
  * <p>
  * 班级表 服务类
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ClassService extends IService<Classes> {
 
+    void batchImport(InputStream inputStream);
 }

@@ -2,16 +2,20 @@ package com.bai.teachermanager.controller;
 
 
 import com.bai.teachermanager.entity.Classes;
+import com.bai.teachermanager.execption.TeacherManagerException;
 import com.bai.teachermanager.mapper.ClassMapper;
 import com.bai.teachermanager.service.impl.ClassServiceImpl;
 import com.bai.teachermanager.utils.R;
+import com.bai.teachermanager.utils.ResultCode;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -108,6 +112,23 @@ public class ClassController {
             return R.error().message("数据不存在");
         }
     }
+
+    //批量导入数据
+    @ApiOperation("批量导入数据")
+    @PostMapping("import")
+    public R batchExcel(@ApiParam(value = "文件",required = true) @RequestParam("file") MultipartFile file) {
+        try {
+            InputStream inputStream = file.getInputStream();
+            classService.batchImport(inputStream);
+            return R.ok().message("导入成功");
+        } catch (Exception e) {
+//            log.error(ExceptionUtils.getMessage(e));
+            throw  new TeacherManagerException(ResultCode.EXCEL_DATA_IMPORT_ERROR);
+
+        }
+
+    }
+
 
 }
 

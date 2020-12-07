@@ -56,6 +56,9 @@ public class Course extends BaseEntity {
     @ApiModelProperty(value = "授课教师编号（用于获取teacher表的教师名）")
     private String teacherId;
 
+    @ApiModelProperty(value = "指导/考察次数（用于确认课程设计、实训、实习的课程系数）")
+    private  String guideInspectFrequency;
+
     @ApiModelProperty(value = "是否为“开新课/新开课”")
     private Integer isNew;
 

@@ -2,15 +2,20 @@ package com.bai.teachermanager.controller;
 
 
 import com.bai.teachermanager.entity.Teacher;
+import com.bai.teachermanager.entity.vo.TeacherQueryVo;
+import com.bai.teachermanager.execption.TeacherManagerException;
 import com.bai.teachermanager.mapper.TeacherMapper;
 import com.bai.teachermanager.service.impl.TeacherServiceImpl;
 import com.bai.teachermanager.utils.R;
+import com.bai.teachermanager.utils.ResultCode;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
@@ -39,9 +44,11 @@ public class TeacherController {
     @ApiOperation("教师列表分页")
     @GetMapping("/list/{page}/{limit}")
     public R pageList(@ApiParam( value = "页码" ,required = true) @PathVariable("page") long page,
-                      @ApiParam(value = "页面数据量" ,required = true) @PathVariable("limit") long limit){
+                      @ApiParam(value = "页面数据量" ,required = true) @PathVariable("limit") long limit,
+                      @ApiParam("构造查询条件")TeacherQueryVo teacherQueryVo
+                      ){
         Page<Teacher> pageParm = new Page<>(page,limit);
-        Page<Teacher> teacherPage = teacherMapper.selectPage(pageParm, null);
+        Page<Teacher> teacherPage = teacherService.selectPage(pageParm,teacherQueryVo);
         long total = teacherPage.getTotal(); //获取总数
         List<Teacher> records = teacherPage.getRecords();  //获取记录行数
         return R.ok().data("total",total).data("rows",records);
@@ -119,6 +126,25 @@ public class TeacherController {
             return R.error().message("数据不存在");
         }
     }
+
+
+    //批量导入数据
+    @ApiOperation("批量导入数据")
+    @PostMapping("import")
+    public R batchExcel(@ApiParam(value = "文件",required = true) @RequestParam("file") MultipartFile file) {
+        try {
+            InputStream inputStream = file.getInputStream();
+            teacherService.batchImport(inputStream);
+            return R.ok().message("导入成功");
+        } catch (Exception e) {
+//            log.error(ExceptionUtils.getMessage(e));
+            throw  new TeacherManagerException(ResultCode.EXCEL_DATA_IMPORT_ERROR);
+
+        }
+
+    }
+
+
 
 
 

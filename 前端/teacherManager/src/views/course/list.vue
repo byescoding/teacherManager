@@ -54,6 +54,7 @@
       <el-table-column label="课程名称" prop="name" width="150" />
 
       <el-table-column prop="term" label="学期" width="150" />
+      <el-table-column label="课程类型" prop="courseType" width="150" />
 
       <el-table-column label="总课时" prop="classTime" width="100" align="center"/>
 
@@ -66,6 +67,7 @@
       <el-table-column label="教班数量" prop="classNumber" width="100" align="center"/>
 
       <el-table-column label="排课人数" prop="studentNumber" width="100" align="center"/>
+      <el-table-column label="任课老师" prop="teacherName" width="150" align="center"/>
 
       <el-table-column prop="isNew" label="是否新课" align="center">
         <template slot-scope="scope">

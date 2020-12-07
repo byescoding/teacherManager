@@ -59,9 +59,15 @@
         </template>
       </el-form-item>
 
+      <el-form-item label="指导/考察次数">
+        <template>
+          <el-input-number v-model="course.guideInspectFrequency" :min="1" :max="100" />
+        </template>
+      </el-form-item>
+
       <el-form-item label="授课老师">
         <template>
-          <el-select v-model="course.teacherId" placeholder="请选择">
+          <el-select v-model="course.teacherId" clearable placeholder="请选择">
             <el-option
               v-for="item in teacherList"
               :key="item.id"
@@ -115,7 +121,8 @@ export default {
         experimentalClassTime: 1,
         weeks: 1,
         classNumber: 1,
-        studentNumber: 1
+        studentNumber: 1,
+        guideInspectFrequency: 1
       },
       saveBtnDisabled: false, // 保存按钮是否禁用，防止表单重复提交
       teacherList: [],

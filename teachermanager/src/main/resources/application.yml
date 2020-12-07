@@ -1,17 +1,15 @@
 server:
-  port: 8110 #·þÎñ¶Ë¿Ú
+  port: 8110 #ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½
 spring:
   profiles:
     active: dev
-  application:
-    name: service-edu
   datasource:
     url: jdbc:mysql://localhost:3306/teachermanager?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
 
-  #ÈÕÆÚ¸ñÊ½»¯
+  #ï¿½ï¿½ï¿½Ú¸ï¿½Ê½ï¿½ï¿½
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
