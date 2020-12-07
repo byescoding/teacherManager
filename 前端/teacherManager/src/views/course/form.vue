@@ -67,7 +67,7 @@
 
       <el-form-item label="授课老师">
         <template>
-          <el-select v-model="course.teacherId" clearable placeholder="请选择">
+          <el-select v-model="course.teacherId" placeholder="请选择">
             <el-option
               v-for="item in teacherList"
               :key="item.id"

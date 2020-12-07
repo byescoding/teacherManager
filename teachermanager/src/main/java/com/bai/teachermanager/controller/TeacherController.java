@@ -67,7 +67,7 @@ public class TeacherController {
 
 
     @ApiOperation("修改教师信息")
-    @PostMapping("/update/{id}")
+    @PutMapping("/update")
     public R  updateAdminById(@ApiParam(value = "教师信息",required = true) @RequestBody Teacher teacher){
         boolean isUpdate = teacherService.updateById(teacher);
         if (isUpdate){

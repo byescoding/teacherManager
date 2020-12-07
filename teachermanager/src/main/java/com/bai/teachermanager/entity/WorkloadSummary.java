@@ -47,12 +47,17 @@ public class WorkloadSummary extends BaseEntity {
     @ApiModelProperty(value = "毕业设计工作量")
     private Float graduationProject;
 
+    @ApiModelProperty(value = "Capstone课程工作量")
+    private Float capstone;
+
     @ApiModelProperty(value = "教书育人服务工作量")
     private Float teachingEducatingService;
 
-    @ApiModelProperty(value = "合计工作量")
-    private Float total;
+    @ApiModelProperty(value = "合计工作量1（除教书育人工作量之外）")
+    private Float total1;
 
+    @ApiModelProperty(value = "合计工作量2（包含教书育人工作量在内）")
+    private Float total2;
     @ApiModelProperty(value = "逻辑删除")
     @TableLogic
     private Integer isDeleted;

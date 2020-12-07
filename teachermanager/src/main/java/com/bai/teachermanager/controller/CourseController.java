@@ -71,7 +71,7 @@ public class CourseController {
 
 
     @ApiOperation("修改课程类型信息")
-    @PostMapping("/update")
+    @PutMapping("/update")
     public R  updateAdminById(@ApiParam(value = "课程信息",required = true) @RequestBody Course course){
         boolean isUpdate = courseService.updateById(course);
         if (isUpdate){
