@@ -30,6 +30,14 @@ public class CourseType extends BaseEntity {
     @ApiModelProperty(value = "课程名称")
     private String name;
 
+    @ApiModelProperty(value = "父级id")
+    private String parentId;
+
+    @ApiModelProperty(value = "父级课程名")
+    private String parentName;
+
+
+
     @ApiModelProperty(value = "逻辑删除")
     @TableLogic
     private Integer isDeleted;

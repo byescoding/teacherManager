@@ -19,14 +19,12 @@ public class Student extends BaseEntity {
     @ApiModelProperty(value = "学生姓名")
     private String name;
 
-    @ApiModelProperty(value = "性别")
-    private Integer sex;
+    @ApiModelProperty(value = "教师id")
+    private String teacherId;
 
-    @ApiModelProperty(value = "职称")
-    private String title;
+    @ApiModelProperty(value = "课程类型id")
+    private String courseTypeId;
 
-    @ApiModelProperty(value = "联系方式")
-    private String telephone;
 
     @ApiModelProperty(value = "逻辑删除")
     @TableLogic

@@ -38,14 +38,12 @@ public class Course extends BaseEntity {
     @ApiModelProperty(value = "总学时")
     private Integer classTime;
 
-    @ApiModelProperty(value = "理论课学时")
-    private Integer theoryClassTime;
-
-    @ApiModelProperty(value = "实验课学时")
-    private Integer experimentalClassTime;
-
     @ApiModelProperty(value = "计划周数")
     private Integer weeks;
+
+    @ApiModelProperty(value = "所教班级")
+    private Integer classId;
+
 
     @ApiModelProperty(value = "教班数量")
     private Integer classNumber;

@@ -40,7 +40,7 @@ public class ClassController {
     @GetMapping("/getclasses")
     public R getAdminList(){
         List<Classes> list = classService.list();
-        return R.ok().data("admins",list);
+        return R.ok().data("classes",list);
     }
     @ApiOperation("班级列表分页")
     @GetMapping("/list/{page}/{limit}")
